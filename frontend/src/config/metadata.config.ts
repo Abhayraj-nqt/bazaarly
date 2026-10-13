@@ -1,6 +1,6 @@
-import { Metadata } from "next";
+import { type Metadata } from "next";
 
-import { STATIC_META_DATA } from "@/lib/seo/static-metadata";
+import { type STATIC_META_DATA } from "@/lib/seo/static-metadata";
 import { createPageMetadata } from "@/lib/seo/utils";
 
 type MetaDataProps = Record<keyof typeof STATIC_META_DATA, Metadata>;

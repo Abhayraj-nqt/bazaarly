@@ -1,4 +1,4 @@
-import { Schema, SchemaArray } from "@/lib/seo/types";
+import { type Schema, type SchemaArray } from "@/lib/seo/types";
 import { serializeSchema } from "@/lib/seo/utils";
 
 type SchemaRendererProps = {

@@ -1,10 +1,10 @@
-import { LocalBusiness } from "schema-dts";
+import { type LocalBusiness } from "schema-dts";
 
 import { SITE_CONFIG } from "@/config/site.config";
 
 import { createWebPageSchema } from "./dynamic-schema";
-import { STATIC_META_DATA, StaticMetaData } from "./static-metadata";
-import { SchemaArray } from "./types";
+import { STATIC_META_DATA, type StaticMetaData } from "./static-metadata";
+import { type SchemaArray } from "./types";
 import { createSchema } from "./utils";
 
 function autoWebPageSchema(

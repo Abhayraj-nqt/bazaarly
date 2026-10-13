@@ -25,11 +25,11 @@ export default {
       ],
     ],
 
-    // Forbids Start-Case, PascalCase, and UPPER-CASE 
+    // Forbids Start-Case, PascalCase, and UPPER-CASE
     // (but allows lower-case, camelCase, kebab-case, etc.)
     "subject-case": [
-      2, 
-      "never", 
+      2,
+      "never",
       ["start-case", "pascal-case", "upper-case"]
     ],
 

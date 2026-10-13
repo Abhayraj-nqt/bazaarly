@@ -1,8 +1,8 @@
-import { WebPage } from "schema-dts";
+import { type WebPage } from "schema-dts";
 
 import { SITE_CONFIG } from "@/config/site.config";
 
-import { Schema } from "./types";
+import { type Schema } from "./types";
 import { createSchema } from "./utils";
 
 export function createWebPageSchema(params: {

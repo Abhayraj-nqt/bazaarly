@@ -1,0 +1,36 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.iml
+
+# Environment and secrets (never commit real ones)
+.env
+.env.*
+!.env.example
+
+# Java / Maven
+target/
+*.class
+*.jar
+*.war
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/timing.properties
+
+# Node (safety net; frontend/.gitignore covers the details)
+node_modules/
+.pnpm-store/
+
+# Logs and temp
+*.log
+logs/
+
+# Docker local data
+infra/**/data/
+infra/**/volumes/

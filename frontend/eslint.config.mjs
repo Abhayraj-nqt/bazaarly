@@ -20,28 +20,10 @@ export default defineConfig([
     "next-env.d.ts",
     "src/components/ui/**/*",
     "commitlint.config.mjs",
+    "lint-staged.config.mjs",
   ]),
 
   // --- Tailwind CSS ---
-  // ...tailwind.configs["flat/recommended"],
-  //   ...[tailwind.configs.recommended].flat(),
-  // {
-  //   settings: {
-  //     tailwindcss: { cssConfigPath: "./src/app/globals.css" },
-  //   },
-  //   rules: {
-  //     // Class sorting is handled by prettier-plugin-tailwindcss
-  //     "tailwindcss/classnames-order": "off",
-  //     "tailwindcss/no-arbitrary-value": "warn",
-  //     "tailwindcss/no-custom-classname": [
-  //       "warn",
-  //       { whitelist: [String.raw`custom\-*`] },
-  //     ],
-  //     "tailwindcss/no-contradicting-classname": "warn",
-  //   },
-  // },
-
-    // --- Tailwind CSS ---
   {
     plugins: { tailwindcss: tailwind },
     settings: {

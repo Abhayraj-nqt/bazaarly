@@ -8,6 +8,7 @@ import {
   QueryClientProvider,
 } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+
 import { ApiError } from "@/lib/api/api-error";
 import { clientLogger } from "@/lib/logger/client";
 

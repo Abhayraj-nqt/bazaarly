@@ -1,5 +1,5 @@
 import { SCHEMA_CONFIG } from "@/config/schema.config";
-import { SchemaArray } from "@/lib/seo/types";
+import { type SchemaArray } from "@/lib/seo/types";
 import { mergeSchemas } from "@/lib/seo/utils";
 
 import { SchemaRenderer } from "./schema-renderer";

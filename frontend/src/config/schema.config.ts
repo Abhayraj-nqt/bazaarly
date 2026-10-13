@@ -1,11 +1,11 @@
 import { COMMON_SCHEMAS } from "@/lib/seo/common-schema";
-import { STATIC_META_DATA } from "@/lib/seo/static-metadata";
+import { type STATIC_META_DATA } from "@/lib/seo/static-metadata";
 import {
   homePageSchemas,
   signInPageSchemas,
   signUpPageSchemas,
 } from "@/lib/seo/static-schema";
-import { SchemaConfig } from "@/lib/seo/types";
+import { type SchemaConfig } from "@/lib/seo/types";
 
 export const SCHEMA_CONFIG = {
   HOME: {

@@ -1,35 +1,44 @@
 {
-    "[java]": {
-        "editor.defaultFormatter": "redhat.java",
-        "editor.tabSize": 4
-    },
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.tabSize": 2
-    },
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.tabSize": 2
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit",
+        "source.addMissingImports": "explicit"
     },
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "[yaml]": {
-        "editor.defaultFormatter": "redhat.vscode-yaml",
-        "editor.tabSize": 2
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java",
+        "editor.tabSize": 4
+    },
+    "editor.quickSuggestions": {
+        "strings": "on"
     },
     "eslint.workingDirectories": [
         {
-            "directory": "frontend",
-            "changeProcessCWD": true
+            "directory": "./frontend"
         }
     ],
-    "typescript.tsdk": "frontend/node_modules/typescript/lib",
-    "typescript.enablePromptUseWorkspaceTsdk": true,
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": "explicit"
-    },
+    "js/ts.tsdk.path": "frontend/node_modules/typescript/lib",
+    "js/ts.tsdk.promptToUseWorkspaceVersion": true,
+    "js/ts.preferences.importModuleSpecifier": "non-relative",
+    "js/ts.updateImportsOnFileMove.enabled": "always",
+    "tailwindCSS.classFunctions": [
+        "cn",
+        "cva",
+        "clsx"
+    ],
+    "css.lint.unknownAtRules": "ignore",
     "files.eol": "\n",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
@@ -37,9 +46,15 @@
         "**/node_modules": true,
         "**/target": true
     },
+    "files.watcherExclude": {
+        "**/node_modules/**": true,
+        "**/.next/**": true,
+        "**/target/**": true
+    },
     "search.exclude": {
         "**/node_modules": true,
         "**/.next": true,
-        "**/target": true
+        "**/target": true,
+        "**/pnpm-lock.yaml": true
     }
 }

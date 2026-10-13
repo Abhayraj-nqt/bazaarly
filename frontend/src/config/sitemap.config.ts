@@ -1,4 +1,4 @@
-import { SitemapConfig } from "@/lib/seo/types";
+import { type SitemapConfig } from "@/lib/seo/types";
 
 import { SITE_CONFIG } from "./site.config";
 

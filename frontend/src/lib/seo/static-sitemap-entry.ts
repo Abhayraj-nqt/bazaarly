@@ -1,6 +1,6 @@
 import { ROUTES } from "@/constants/routes";
 
-import { SitemapEntry } from "./types";
+import { type SitemapEntry } from "./types";
 import { createSitemapEntry } from "./utils";
 
 /**

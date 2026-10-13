@@ -1,11 +1,11 @@
-import { Metadata } from "next";
+import { type Metadata } from "next";
 import type { Thing, WithContext } from "schema-dts";
 
 import { SITE_CONFIG } from "@/config/site.config";
 import { SITEMAP_CONFIG } from "@/config/sitemap.config";
 
-import { STATIC_META_DATA, StaticMetaData } from "./static-metadata";
-import { Schema, SchemaArray, SitemapEntry } from "./types";
+import { STATIC_META_DATA, type StaticMetaData } from "./static-metadata";
+import { type Schema, type SchemaArray, type SitemapEntry } from "./types";
 
 /**
  * Type-safe helper to create JSON-LD schema

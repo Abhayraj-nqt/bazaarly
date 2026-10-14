@@ -56,5 +56,6 @@
         "**/.next": true,
         "**/target": true,
         "**/pnpm-lock.yaml": true
-    }
+    },
+    "java.compile.nullAnalysis.mode": "automatic"
 }

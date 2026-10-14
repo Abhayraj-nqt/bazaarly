@@ -15,3 +15,10 @@ services:
     extends:
       file: common-config.yml
       service: network-deploy-service
+
+networks:
+  bazaarly:
+    driver: bridge
+
+volumes:
+  keycloak_data:

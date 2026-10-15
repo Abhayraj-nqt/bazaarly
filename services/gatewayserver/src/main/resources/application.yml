@@ -12,18 +12,34 @@ spring:
             locator:
               enabled: false
               lower-case-service-id: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:7080/realms/bazaarly # validates the iss claim
+          jwk-set-uri: http://localhost:7080/realms/bazaarly/protocol/openid-connect/certs
+          # audiences: bazaarly-api    # turn on after you add the audience mapper in Keycloak
+
+# management:
+#   endpoints:
+#     web:
+#       exposure:
+#         include: "*"
+#   endpoint:
+#     gateway:
+#       access: unrestricted
+#   info:
+#     env:
+#       enabled: true
 
 management:
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: health,info
   endpoint:
     gateway:
-      access: unrestricted
-  info:
-    env:
-      enabled: true
+      access: none
 
 info:
   app:
